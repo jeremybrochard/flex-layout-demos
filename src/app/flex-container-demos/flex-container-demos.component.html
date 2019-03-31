@@ -1,0 +1,42 @@
+<div fxLayout="column">
+
+  <h2>Conteneur Flex</h2>
+
+  <mat-accordion>
+
+    <!-- Direction du layout (column ou row) -->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Direction du layout</mat-panel-title>
+        <mat-panel-description>fxLayout="row | column | row-reverse | column-reverse"</mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <app-direction-demo></app-direction-demo>
+      </div>
+    </mat-expansion-panel>
+
+    <!-- Alignement-->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Alignement</mat-panel-title>
+        <mat-panel-description>fxLayoutAlign="[main-axis] [cross-axis]"</mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <app-alignment-demo></app-alignment-demo>
+      </div>
+    </mat-expansion-panel>
+
+    <!-- Espacement des éléments -->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Espacement</mat-panel-title>
+        <mat-panel-description>fxLayoutGap="[number] px | % | em | pt"</mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        DATA
+      </div>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+
+</div>

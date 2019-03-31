@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "highlightjs/styles/monokai-sublime.css";
+
+// Theme colors :
+$primary: #3f51b5;
+$accent: #ff4081;
+
+body {
+    margin: 0;
+}
+
+mat-panel-title {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+
+.flex-container-row {
+    padding: 12px;
+    height: 100px;
+    background-color: $primary;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flex-container-column {
+    padding: 12px;
+    width: 100px;
+    background-color: $primary;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flex-item {
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+    background-color: $accent;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.bg-color-primary {
+  background-color: $primary;
+}
+
+.bg-color-accent {
+  background-color: $accent;
+}

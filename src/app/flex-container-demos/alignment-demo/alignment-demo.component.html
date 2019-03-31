@@ -1,0 +1,62 @@
+<div fxLayout="column" fxLayoutGap="20px">
+
+  <div class="demo-container" [fxLayout]="layout" fxLayoutAlign="{{mainAlignment}} {{crossAlignment}}">
+
+    <div class="flex-item bg-color-primary">
+      ONE
+    </div>
+    <div class="flex-item bg-color-primary">
+      TWO
+    </div>
+    <div class="flex-item bg-color-primary">
+      THREE
+    </div>
+    <div class="flex-item bg-color-primary">
+      FOUR
+    </div>
+    <div class="flex-item bg-color-primary">
+      FIVE
+    </div>
+
+  </div>
+
+  <!-- Buttons -->
+  <div fxLayout="row" fxLayoutGap="30px">
+
+    <div>
+      <span>Direction</span>
+      <mat-radio-group fxLayout="column" fxLayoutGap="8px">
+        <mat-radio-button *ngFor="let option of layoutList" [value]="option.value" [checked]="option.selected"
+          (click)="onLayoutChange(option.value)">
+          {{option.label}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <div>
+      <label>Alignment - main axis</label>
+      <mat-radio-group fxLayout="column" fxLayoutGap="8px">
+        <mat-radio-button *ngFor="let option of mainAxisAlignmentlist" [value]="option.value"
+          [checked]="option.selected" (click)="onMainAlignmentChange(option.value)">
+          {{option.label}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <div>
+      <label>Alignment - cross axis</label>
+      <mat-radio-group fxLayout="column" fxLayoutGap="8px">
+        <mat-radio-button *ngFor="let option of crossAxisAlignmentlist" [value]="option.value"
+          [checked]="option.selected" (click)="onCrossAlignmentChange(option.value)">
+          {{option.label}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+  </div>
+
+  <pre><code class="html">
+      &lt;div fxLayout="{{layout}}" fxLayoutAlign="{{mainAlignment}} {{crossAlignment}}"&gt;&lt;/div&gt;
+  </code></pre>
+
+</div>
