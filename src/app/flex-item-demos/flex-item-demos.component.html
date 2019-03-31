@@ -1,42 +1,42 @@
 <div fxLayout="column">
 
-    <h2>Element Flex</h2>
-  
-    <mat-accordion>
-  
-      <!-- Ordre -->
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>Ordre des éléments</mat-panel-title>
-          <mat-panel-description>fxLayout="row | column | row-reverse | column-reverse"</mat-panel-description>
-        </mat-expansion-panel-header>
-        <div>
-          <app-direction-demo></app-direction-demo>
-        </div>
-      </mat-expansion-panel>
-  
-      <!-- Taille-->
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>Taille</mat-panel-title>
-          <mat-panel-description>fxLayoutAlign="[main-axis] [cross-axis]"</mat-panel-description>
-        </mat-expansion-panel-header>
-        <div>
-          DATA
-        </div>
-      </mat-expansion-panel>
-  
-      <!-- Alignement spécifique-->
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>Alignement spécifique</mat-panel-title>
-          <mat-panel-description>fxLayoutGap="[number] px | % | em | pt"</mat-panel-description>
-        </mat-expansion-panel-header>
-        <div>
-          DATA
-        </div>
-      </mat-expansion-panel>
-  
-    </mat-accordion>
-  
-  </div>
+  <h2>Element Flex</h2>
+
+  <mat-accordion>
+
+    <!-- Ordre -->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Ordre des éléments</mat-panel-title>
+        <mat-panel-description>fxFlexOrder="[number]"</mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <app-order-demo></app-order-demo>
+      </div>
+    </mat-expansion-panel>
+
+    <!-- Taille-->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Taille</mat-panel-title>
+        <mat-panel-description>fxFlex="[number] | px | % | vw | vh | [grow] [shrink] [basis]"</mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <app-basis-grow-shrink-demo></app-basis-grow-shrink-demo>
+      </div>
+    </mat-expansion-panel>
+
+    <!-- Alignement spécifique-->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Alignement spécifique</mat-panel-title>
+        <mat-panel-description>fxFlexAlign="start | center | end"</mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <app-align-demo></app-align-demo>
+      </div>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+
+</div>

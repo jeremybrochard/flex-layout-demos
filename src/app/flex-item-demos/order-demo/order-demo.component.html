@@ -1,0 +1,32 @@
+<div fxLayout="column" fxLayoutGap="50px">
+
+  <div fxLayout="row">
+
+    <div class="flex-item bg-color-primary" [fxFlexOrder]="one.value">FIRST : {{one.value}} </div>
+    <div class="flex-item bg-color-primary" [fxFlexOrder]="two.value">SECOND ROW : {{two.value}}</div>
+    <div class="flex-item bg-color-primary" [fxFlexOrder]="three.value">THIRD ROW: {{three.value}}</div>
+
+  </div>
+
+  <div fxLayout="row" fxLayoutGap="30px">
+    <div fxLayout="column" >
+      <span>Ordre de ONE</span>
+      <mat-form-field>
+        <input #one matInput>
+      </mat-form-field>
+    </div>
+    <div fxLayout="column" >
+      <span>Ordre de TWO</span>
+      <mat-form-field>
+        <input #two matInput>
+      </mat-form-field>
+    </div>
+    <div fxLayout="column" >
+      <span>Ordre de THREE</span>
+      <mat-form-field>
+        <input #three matInput>
+      </mat-form-field>
+    </div>
+  </div>
+
+</div>

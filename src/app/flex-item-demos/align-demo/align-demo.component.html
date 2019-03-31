@@ -1,0 +1,28 @@
+<div fxLayout="column" fxLayoutGap="20px">
+
+
+  <div class="demo-container" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="12px">
+
+    <div class="flex-item bg-color-primary">ONE</div>
+    <div class="flex-item bg-color-primary" [fxFlexAlign]="currentAlign">TWO ROW</div>
+    <div class="flex-item bg-color-primary">THREE</div>
+    <div class="flex-item bg-color-primary">FOUR</div>
+    <div class="flex-item bg-color-primary">FIVE</div>
+
+  </div>
+
+  <div fxLayout="row" fxLayoutGap="30px">
+
+    <div>
+      <span>Alignement de TWO ROW</span>
+      <mat-radio-group fxLayout="column" fxLayoutGap="8px">
+        <mat-radio-button *ngFor="let option of alignList" [value]="option.value" [checked]="option.selected"
+          (click)="onAlignChange(option.value)">
+          {{option.label}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+  </div>
+
+</div>
