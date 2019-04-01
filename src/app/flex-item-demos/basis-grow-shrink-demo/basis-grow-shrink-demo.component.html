@@ -1,3 +1,37 @@
-<p>
-  basis-grow-shrink-demo works!
-</p>
+<div fxLayout="column">
+
+  <div fxLayout="column">
+    <h4>Taille fixe</h4>
+    <div fxLayout="row" class="flex-container-row">
+
+      <div fxFlex="50px" class="flex-item">50px</div>
+      <div fxFlex="100px" class="flex-item">100px</div>
+      <div fxFlex="300px" class="flex-item">300px</div>
+
+    </div>
+  </div>
+
+  <div fxLayout="column">
+    <h4>Taille adaptative en %</h4>
+    <div fxLayout="row" class="flex-container-row">
+
+      <div fxFlex="50" class="flex-item">50% de la largeur</div>
+      <div fxFlex="20" class="flex-item">20%</div>
+      <div fxFlex="30" class="flex-item">30%</div>
+
+    </div>
+  </div>
+
+  <div fxLayout="column">
+    <h4>Taille adaptative en fonction de la taille initiale</h4>
+    <div fxLayout="row" class="flex-container-row">
+
+      <div fxFlex="8 8 auto" class="flex-item">8 / 10 de la largeur</div>
+      <div fxFlex="1 1 auto" class="flex-item">1 / 10</div>
+      <div fxFlex="1 1 auto" class="flex-item">1 / 10</div>
+
+    </div>
+  </div>
+
+
+</div>

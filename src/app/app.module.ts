@@ -22,6 +22,7 @@ import { OrderDemoComponent } from './flex-item-demos/order-demo/order-demo.comp
 import { BasisGrowShrinkDemoComponent } from './flex-item-demos/basis-grow-shrink-demo/basis-grow-shrink-demo.component';
 import { AlignDemoComponent } from './flex-item-demos/align-demo/align-demo.component';
 import { FlexResponsiveDemosComponent } from './flex-responsive-demos/flex-responsive-demos.component';
+import { ResponsiveDemoComponent } from './flex-responsive-demos/responsive-demo/responsive-demo.component';
 
 
 const materialModules = [
@@ -45,7 +46,8 @@ const materialModules = [
     OrderDemoComponent,
     BasisGrowShrinkDemoComponent,
     AlignDemoComponent,
-    FlexResponsiveDemosComponent
+    FlexResponsiveDemosComponent,
+    ResponsiveDemoComponent
   ],
   imports: [
     CommonModule,
